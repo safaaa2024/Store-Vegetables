@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.title{
+  color: #198754;
+}
+.navbar {
+    background-color: #e8f5e9 !important; 
+}
+
+.nav-link {
+    font-weight: 500;
+}
+.date{
+  opacity: 1;
+  border-bottom: #198754;
+}
+.nav-link.active {
+    color: #1b5e20 !important; 
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+}
+.carousel i{
+    font-size: 2rem;
+}
+.carousel-caption h5 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.caption-box {
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.accordion-button:focus,
+.accordion-button:hover {
+    box-shadow: none;      
+    background-color: #f8f9fa; 
+    color: #198754;        
+}
+.image-attachment1,.image-attachment2 {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.image-attachment2{
+    background-image: url("https://plus.unsplash.com/premium_photo-1675731118517-c85b8cd0904c?q=80&w=627&auto=format&fit=crop");
+}
+.image-attachment1{
+  background-image: url("https://plus.unsplash.com/premium_photo-1674382739482-5d36b98d653a?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.social-card {
+  width: 200px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+.social-card .icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto 10px;
+  font-size: 30px;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+.social-card a{
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer-section {
+  background: #0d0d0d;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.footer-section .footer-link {
+  display: block;
+  color: #adb5bd;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+.footer-section p {
+  color: #e0e0e0;
+  opacity: .5;
+}
+
+.footer-section .footer-link:hover {
+  color: #8aff8a;
+  padding-left: 5px;
+}
+
+.footer-section .social-icons a {
+  color: #8aff8a;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.footer-section .social-icons a:hover {
+  color: #fff;
+}
+.veggie-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease;
+}
+.veggie-img{
+  height: 250px;
+}
+
+.veggie-card:hover img {
+  transform: scale(1.03);
+  transition: all .5s linear;
+}
+
+.veggie-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 220px;
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+}
+.veggie-left img {
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+}
+
+@media (max-width: 991px) {
+  .veggie-img img {
+    clip-path: none;
+  }
+}
+
+
+.veggie-card h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.veggie-card p {
+  color: #555;
+  font-size: 15px;
+}
+.fancy-hover {
+  position: relative;
+  overflow: hidden;
+}
+.fancy-hover::before,
+.fancy-hover::after {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  z-index: 1;
+  transition: 1s ease;
+  pointer-events: none;
+}
+.fancy-hover::before {
+  top: -150%;
+  right: -150%;
+  background: rgba(40, 167, 69, 0.25);
+}
+.fancy-hover::after {
+  bottom: -150%;
+  left: -150%;
+  background: rgba(25, 135, 84, 0.25);
+}
+.fancy-hover:hover::before {
+  top: -20%;
+  right: -20%;
+}
+
+.fancy-hover:hover::after {
+  bottom: -20%;
+  left: -20%;
+}

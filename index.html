@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-success bg-opacity-10 fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand text-success d-flex align-items-center" href="#">
+      <img src="https://template.canva.com/EAGVvH8ASqs/2/0/1600w-1vG1XmiZvYk.jpg" alt="logo" width="90" height="65" class="me-2 logo">
+      VeggieZone
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link  text-success  active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Vegetables</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link  text-success dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Recipes
+          </a>
+          <ul class="dropdown-menu "
+          style="
+      --bs-dropdown-link-hover-bg: #198754;
+      --bs-dropdown-link-hover-color: #fff;
+    "
+          >
+            <li><a class="dropdown-item" href="#">Salads</a></li>
+            <li><a class="dropdown-item" href="#">Soups</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Smoothies</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-success disabled" aria-disabled="true">Coming Soon</a>
+        </li>
+      </ul>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search veggies..." aria-label="Search"/>
+        <button class="btn btn-outline-success border border-success hover-bg-success" type="submit">Search</button>
+       <button class="btn  btn-success bg-success ms-2" type="button" data-bs-toggle="modal" data-bs-target="#loginModal"> Login
+</button>
+<!-- Icons Social Media -->
+
+
+      </form>
+     
+    </div>
+     
+  </div>  
+
+</nav>
+<!-- Icons-fixed -->
+
+  <div class="position-fixed top-50 end-0 me-4 translate-middle-y d-flex flex-column gap-3 p-2" style="z-index: 9;">
+  
+  <a href="#" class="btn btn-success  rounded-circle d-flex align-items-center justify-content-center" style="width: 47px; height: 47px;">
+<i class="fa-brands fa-facebook"></i>
+  </a>
+
+  <a href="#" class="btn btn-success  rounded-circle d-flex align-items-center justify-content-center" style="width: 47px; height: 47px;">
+ <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <a href="#" class="btn btn-success  rounded-circle d-flex align-items-center justify-content-center" style="width: 47px; height: 47px;">
+  <i class="fa-brands fa-twitter"></i>
+  </a>
+  <a href="#" class="btn btn-success  rounded-circle d-flex align-items-center justify-content-center" style="width: 47px; height: 47px;">
+   <i class="fa-brands fa-instagram"></i>
+  </a>
+  <a href="#" class="btn btn-success  rounded-circle d-flex align-items-center justify-content-center" style="width: 47px; height: 47px;">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+
+</div>
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Member Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Email address</label>
+            <input type="email" class="form-control" placeholder="Enter your email">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" placeholder="Enter your password">
+          </div>
+
+          <button class="btn  btn-success bg-success w-100">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+     <div class="carousel-caption d-md-block">
+      <div class="carousel-caption  d-md-block">
+        <h5>Fresh & Organic Vegetables</h5>
+        <p>Discover the best quality vegetables picked daily from local farms.</p>
+        <button type="button" class="btn btn-success px-4 py-2 fs-5 mt-3">Shop Now</button>
+    </div>
+
+</div>
+
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+      <div class="carousel-caption  d-md-block">
+        <h5>Healthy Choices Every Day</h5>
+        <p>Eat clean, stay healthy — choose from a wide range of fresh produce.</p>
+            <button type="button" class="btn btn-success px-4 py-2 fs-5">Shop Now</button>
+
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1519996529931-28324d5a630e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+      <div class="carousel-caption mx-auto d-md-block">
+        <h5>Farm to Your Table</h5>
+        <p>We deliver fresh vegetables straight from the farm to your home.</p>
+            <button type="button" class="btn btn-success px-4 py-2 fs-5">Shop Now</button>
+
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+<i class="fa-solid fa-angles-left  text-success"></i>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <i class="fa-solid fa-angles-right text-success"></i>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+</div>
+
+
+<div class="container  mt-5">
+  <div class="p-4 bg-success-subtle text-success-emphasis rounded shadow-sm text-center">
+
+    <h2 class="fw-bold mb-3 text-success">
+      Welcome to Green Harvest
+    </h2>
+
+    <p class="fs-5 mb-4">
+      Step into a world of fresh, organic vegetables grown with care, dedication, 
+      and respect for nature. Whether you're searching for crisp leafy greens, 
+      vibrant seasonal produce, or premium farm-to-table ingredients — we bring you 
+      the perfect blend of quality, purity, and natural goodness in every selection.
+      Relax, shop with confidence, and enjoy the true taste of freshness delivered 
+      straight from our farms to your home.
+    </p>
+
+    <button class="btn btn-success px-4 py-2">
+      Learn More
+    </button>
+
+  </div>
+</div>
+
+
+
+<div class="container mt-5">
+
+  <!-- Section Title -->
+  <h2 class="text-center fw-bold mb-4 text-success">
+    The Most Popular Vegetables We Offer
+  </h2>
+
+  <!-- Subtitle -->
+  <p class="text-center mb-4 text-secondary fs-6">
+    Discover detailed information about our most requested and best–selling fresh vegetables.
+  </p>
+
+  <!-- Accordion -->
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+
+    <!-- Item 1 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+          aria-expanded="false" aria-controls="flush-collapseOne">
+          Fresh Tomatoes
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          Our tomatoes are picked daily for maximum freshness. Rich in vitamins,
+          perfect for salads, cooking, and juicing.
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+          aria-expanded="false" aria-controls="flush-collapseTwo">
+          Organic Cucumbers
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          Crisp, refreshing cucumbers grown without chemicals. Ideal for pickling,
+          salads, and healthy snacks.
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+          aria-expanded="false" aria-controls="flush-collapseThree">
+          Green Leafy Spinach
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          Packed with iron and essential nutrients, our spinach is perfect for
+          soups, smoothies, and sauté dishes.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="container mt-5">
+  <h3 class="mb-3 text-center">Translate from Arabic to German</h3>
+
+  <textarea id="textToCopy" class="form-control mb-3" rows="3" placeholder="Write the text here..."></textarea>
+
+ <!-- Button to Open the Modal -->
+<button type="button" class="btn btn-success btn-lg btnCopy d-block mx-auto " data-bs-toggle="modal" data-bs-target="#myModal">
+copy</button>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">VeggieZone</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+       the message copied successfully!
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">OK</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+<div class="position-relative my-5">
+  <div class="image-attachment1"></div>
+</div>
+
+<div class="text-center my-5">
+  <h2 class="fw-bold text-success">Popular Vegetables & Fruits in Our Store</h2>
+  <p class="text-secondary fs-6">Check out our fresh, organic, and farm-picked products for your healthy lifestyle.</p>
+</div>  
+
+<div class="container">
+  <div class="row justify-content-center g-4">
+
+    <!-- Strawberries -->
+    <div class="col-12 col-md-6 col-lg-4 afterAndBefore ">
+      <div class="card h-100 shadow-sm fancy-hover">
+        <div class="ratio ratio-4x3">
+          <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?q=80&w=1170&auto=format&fit=crop" class="card-img-top object-fit-cover" alt="Tomatoes">
+        </div>
+        <div class="card-body text-center">
+          <div class="hover-Card-body">
+          <h5 class="card-title fw-bold">Fresh Strawberries</h5>
+          <p class="card-text">Strawberries are bright, juicy, and naturally sweet. They are packed with vitamin C and antioxidants..</p>
+          <a href="#" class="btn btn-success w-50">Shop Now</a>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- Orange -->
+    <div class="col-12 col-md-6 col-lg-4 afterAndBefore">
+      <div class="card h-100 shadow-sm fancy-hover">
+        <div class="ratio ratio-4x3">
+          <img src="https://plus.unsplash.com/premium_photo-1675237625753-c01705e314bb?q=80&w=687&auto=format&fit=crop" class="card-img-top object-fit-cover" alt="Cucumbers">
+        </div>
+        <div class="card-body text-center">
+          
+          <h5 class="card-title fw-bold">Fresh Orange</h5>
+          <p class="card-text">Rich in vitamin C and flavor. Ideal for juices or healthy snacks.</p>
+          <a href="#" class="btn btn-success w-50">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cherries -->
+    <div class="col-12 col-md-6 col-lg-4 afterAndBefore">
+      <div class="card h-100 shadow-sm fancy-hover">
+        <div class="ratio ratio-4x3">
+          <img src="https://images.unsplash.com/photo-1559181567-c3190ca9959b?q=80&w=764&auto=format&fit=crop" class="card-img-top object-fit-cover" alt="Spinach">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title fw-bold">Fresh & Sweet Cherries</h5>
+          <p class="card-text">Cherries are juicy, sweet, and full of flavor. They are rich in antioxidants and vitamins</p>
+          <a href="#" class="btn btn-success w-50">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kiwi -->
+    <div class="col-12 col-md-6 col-lg-4 afterAndBefore">
+      <div class="card h-100 shadow-sm fancy-hover">
+        <div class="ratio ratio-4x3">
+          <img src="https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?q=80&w=1964&auto=format&fit=crop" class="card-img-top object-fit-cover" alt="Kiwi">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title fw-bold">Fresh Kiwi</h5>
+          <p class="card-text">Juicy and sweet, perfect for breakfast or desserts. Full of vitamin C.</p>
+          <a href="#" class="btn btn-success w-50">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Watermelon -->
+    <div class="col-12 col-md-6 col-lg-4 afterAndBefore">
+      <div class="card h-100 shadow-sm fancy-hover">
+        <div class="ratio ratio-4x3">
+          <img src="https://images.unsplash.com/photo-1502975631699-c937e68715ec?q=80&w=687&auto=format&fit=crop" class="card-img-top object-fit-cover" alt="Watermelon">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title fw-bold">Fresh Watermelon</h5>
+          <p class="card-text">Sweet and refreshing, perfect for hot summer days.</p>
+          <a href="#" class="btn btn-success w-50">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Banana -->
+    <div class="col-12 col-md-6 col-lg-4 afterAndBefore">
+      <div class="card h-100 shadow-sm fancy-hover">
+        <div class="ratio ratio-4x3">
+          <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?q=80&w=880&auto=format&fit=crop" class="card-img-top object-fit-cover" alt="Banana">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title fw-bold">Fresh Banana</h5>
+          <p class="card-text">Rich in potassium and energy. Great for snacks or smoothies.</p>
+          <a href="#" class="btn btn-success w-50">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pineapple -->
+    <div class="col-12 col-md-6 col-lg-4 afterAndBefore">
+      <div class="card h-100 shadow-sm fancy-hover">
+        <div class="ratio ratio-4x3">
+          <img src="https://images.unsplash.com/photo-1571575173700-afb9492e6a50?q=80&w=736&auto=format&fit=crop" class="card-img-top object-fit-cover" alt="Pineapple">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title fw-bold">Fresh Pineapple</h5>
+          <p class="card-text">Tropical and sweet. Perfect for desserts and juices.</p>
+          <a href="#" class="btn btn-success w-50">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apple -->
+    <div class="col-12 col-md-6 col-lg-4 afterAndBefore">
+      <div class="card h-100 shadow-sm fancy-hover">
+        <div class="ratio ratio-4x3">
+          <img src="https://images.unsplash.com/photo-1471943038886-87c772c31367?q=80&w=1974&auto=format&fit=crop" class="card-img-top object-fit-cover" alt="Apple">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title fw-bold">Fresh Apple</h5>
+          <p class="card-text">Crisp and juicy apples, great for snacks, salads, and baking.</p>
+          <a href="#" class="btn btn-success w-50">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Raspberries -->
+    <div class="col-12 col-md-6 col-lg-4 afterAndBefore">
+      <div class="card h-100 shadow-sm fancy-hover">
+        <div class="ratio ratio-4x3">
+          <img src="https://plus.unsplash.com/premium_photo-1675731118517-c85b8cd0904c?q=80&w=627&auto=format&fit=crop" class="card-img-top object-fit-cover" alt="Orange">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title fw-bold">Tangy Raspberries</h5>
+          <p class="card-text">Raspberries look similar to strawberries but have a softer texture and a slightly tangy taste.</p>
+          <a href="#" class="btn btn-success w-50">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="position-relative my-5">
+  <div class="image-attachment2"></div>
+</div>
+<!-- Team -->
+<div class="container m-auto mt-5">
+  <h2 class="text-center mb-5">Thanks For Your Support</h2>
+
+  <div class="row justify-content-center g-4">
+
+    <!-- Card 1 -->
+    <div class="col-12 col-md-6 col-lg-4" >
+      <div class="card position-relative" style="width:100%; overflow:hidden;">
+        <img class="card-img-top"
+          style="height:290px; object-fit:cover;"
+          src="https://media.istockphoto.com/id/1186141020/photo/woman-selling-grapes-and-fruits-on-the-supermarket.jpg?s=2048x2048&w=is&k=20&c=5rSB6-BiDKllSTWUcI6lKL8UAb3dSKiPNMIDgREPbB0="
+          alt="Farmer">
+        
+        <div class="card-img-overlay text-center text-light d-flex flex-column align-items-center justify-content-end p-3 "
+          style="background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);">
+
+          <h4 class="card-title mb-1">All Thanks And Appreciation</h4>
+          <p class="mb-2">🕔 June 22, 2023</p>
+
+          <img
+          src="https://media.istockphoto.com/id/1186141020/photo/woman-selling-grapes-and-fruits-on-the-supermarket.jpg?s=2048x2048&w=is&k=20&c=5rSB6-BiDKllSTWUcI6lKL8UAb3dSKiPNMIDgREPbB0="
+            alt="Avatar"
+            class="rounded-3 border border-3 border-white mb-2 rounded-pill "
+            style="width:80px;  height:120px; object-fit:cover;">
+          <p class="m-0 fw-bold">Farmer Ahmed Hassan</p>
+          <p class="mb-3">Organic Vegetables Supplier</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card position-relative" style="width:100%; overflow:hidden;">
+        <img class="card-img-top"
+          style="height:290px; object-fit:cover;"
+          src="https://media.istockphoto.com/id/2209754055/photo/checking-fresh-produce-at-grocery-store.webp?a=1&b=1&s=612x612&w=0&k=20&c=YU5b2xUHbmmIX2lDiiw4KDC0ud4FhI1ifqjnRyGhI_c="
+          alt="Quality Control">
+
+        <div class="card-img-overlay text-center text-light d-flex flex-column align-items-center justify-content-end p-3"
+          style="background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);">
+
+          <h4 class="card-title mb-1">All Thanks And Appreciation</h4>
+          <p class="mb-2">🕔 June 22, 2023</p>
+
+          <img src="https://media.istockphoto.com/id/2209754055/photo/checking-fresh-produce-at-grocery-store.webp?a=1&b=1&s=612x612&w=0&k=20&c=YU5b2xUHbmmIX2lDiiw4KDC0ud4FhI1ifqjnRyGhI_c="
+            alt="Avatar"
+            class="rounded-3 border border-3 border-white mb-2 rounded-pill"
+            style="width:80px;  height:120px; object-fit:cover;">
+
+          <p class="m-0 fw-bold">Eng. Sara Mostafa</p>
+          <p class="mb-3">Quality Control Specialist</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card position-relative" style="width:100%; overflow:hidden;">
+        <img class="card-img-top"
+          style="height:290px; object-fit:cover;"
+          src="https://media.istockphoto.com/id/1495965754/photo/young-blonde-woman-chooses-peach-in-fruit-section-autumn-market-vegetarianism-healthy-food.webp?a=1&b=1&s=612x612&w=0&k=20&c=JffyTbSAHc3imuDKs_AMqtj0wTjLyiXjvMd0Btg59nU="
+          alt="Food Safety">
+
+        <div class="card-img-overlay text-center text-light d-flex flex-column align-items-center justify-content-end p-3"
+          style="background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);">
+
+          <h4 class="card-title mb-1">All Thanks And Appreciation</h4>
+          <p class="mb-2">🕔 June 22, 2023</p>
+
+          <img src="https://media.istockphoto.com/id/1495965754/photo/young-blonde-woman-chooses-peach-in-fruit-section-autumn-market-vegetarianism-healthy-food.webp?a=1&b=1&s=612x612&w=0&k=20&c=JffyTbSAHc3imuDKs_AMqtj0wTjLyiXjvMd0Btg59nU="
+            alt="Avatar"
+            class="rounded-3 border border-3 border-white mb-2 rounded-pill"
+            style="width:80px;  height:120px; object-fit:cover;">
+
+          <p class="m-0 fw-bold">Dr. Mona El-Sayed</p>
+          <p class="mb-3">Food Safety Consultant</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- news -->
+
+<div class="container my-5">
+<h2 class=" text-center mb-4">
+  Fresh Market News 
+</h2>
+  <!-- Card 1 (image right) -->
+  <div class="veggie-card mb-4">
+    <div class="row align-items-center g-0 flex-row-reverse">
+      <div class="col-md-5 col-12 veggie-img">
+        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999" alt="Vegetables" width="250px" height="250px">
+      </div>
+      <div class="col-md-7 p-4">
+        <h5 class="title">Fresh Green Vegetables</h5>
+        <h6 class="date">Mon. May 25th 2025</h6>
+        <p>
+          We provide fresh green vegetables picked daily from local farms to ensure
+          the best quality and nutritional value for your family.
+        </p>
+        <a href="#" class="btn btn-success">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 (image veggie-left) -->
+  <div class="veggie-card mb-4">
+    <div class="row align-items-center g-0">
+      <div class="col-md-5 col-12 veggie-img veggie-left">
+        <img src="https://images.unsplash.com/photo-1518843875459-f738682238a6" alt="Organic Veggies">
+      </div>
+      <div class="col-md-7 p-4">
+        <h5 class="title">Organic Farm Products</h5>
+        <h6 class="date">Tue. June 2nd 2025</h6>
+        <p>
+          Our organic vegetables are grown naturally without chemicals, offering
+          a healthy lifestyle and fresh taste.
+        </p>
+        <a href="#" class="btn btn-success">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 (image right) -->
+  <div class="veggie-card mb-4">
+    <div class="row align-items-center g-0 flex-row-reverse">
+      <div class="col-md-5 col-12 veggie-img">
+        <img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf" alt="Market Vegetables">
+      </div>
+      <div class="col-md-7 p-4">
+        <h5 class="title">Daily Market Harvest</h5>
+        <h6 lass="date">Fri. June 10th 2025</h6>
+        <p>
+          Fresh vegetables arrive every morning directly from the market to guarantee
+          freshness and great flavor.
+        </p>
+        <a href="#" class="btn btn-success">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 4 (image veggie-left) -->
+  <div class="veggie-card">
+    <div class="row align-items-center g-0">
+      <div class="col-md-5 col-12 veggie-img veggie-left">
+        <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2" alt="Healthy Food">
+      </div>
+      <div class="col-md-7 p-4">
+        <h5 class="title">Healthy Lifestyle Choices</h5>
+        <h6 lass="date">Sun. June 15th 2025</h6>
+        <p>
+          Eating fresh vegetables helps maintain a healthy body and supports a balanced
+          and active lifestyle.
+        </p>
+        <a href="#" class="btn btn-success">Read More</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- social Media  -->
+
+<div class="container my-5">
+  <div class="row justify-content-center gap-4">
+
+    <!-- Card 1 -->
+    <div class="social-card text-center p-4">
+      <h5 class="fw-bold text-secondary">Subscribe Now</h5>
+      <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
+           class="icon" alt="">
+      <a href="#" class="d-block mt-3">Go To Link</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="social-card text-center p-4">
+      <h5 class="fw-bold text-secondary">Subscribe Now</h5>
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png"
+           class="icon" alt="">
+      <a href="#" class="d-block mt-3">Go To Link</a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="social-card text-center p-4">
+      <h5 class="fw-bold text-secondary">Subscribe Now</h5>
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+           class="icon" alt="">
+      <a href="#" class="d-block mt-3">Go To Link</a>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="social-card text-center p-4">
+      <h5 class="fw-bold text-secondary">Subscribe Now</h5>
+      <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png"
+           class="icon" alt="">
+      <a href="#" class="d-block mt-3">Go To Link</a>
+    </div>
+
+  </div>
+</div>
+<!--  -->
+
+<!-- footer -->
+<footer class="footer-section">
+  <div class="container">
+    <div class="row">
+
+      <!-- About -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-light fw-bold mb-3">VeggieZone</h5>
+        <p class="text-light ">
+          We bring the freshest organic produce straight from local farms to your table. 
+          Enjoy healthy living with our premium vegetables.
+        </p>
+        <div class="social-icons mt-3">
+          <a href="#" class="me-2"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="me-2"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="me-2"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="me-2"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-light fw-bold mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Fresh Vegetables</a></li>
+          <li><a href="#" class="footer-link">Offers</a></li>
+          <li><a href="#" class="footer-link">Recipes</a></li>
+          <li><a href="#" class="footer-link">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-light fw-bold mb-3">Contact Us</h5>
+        <p class="text-light  mb-1"><i class="fa-solid fa-phone me-2"></i>+20 000 000 000</p>
+        <p class="text-light  mb-1"><i class="fa-solid fa-location-dot me-2"></i>Egypt</p>
+        <p class="text-light "><i class="fa-solid fa-envelope me-2"></i>info@veggiezone.com</p>
+      </div>
+
+    </div>
+    <div class="text-center mt-4 border-top border-secondary pt-3">
+      <p class="text-light mb-0">© 2025 VeggieZone. All Rights Reserved.</p>
+      <p class="text-light">Designed By Eng/ Safaa Ahmed</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
